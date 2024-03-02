@@ -47,6 +47,9 @@
               <heading>News</heading>
               <p style="margin-bottom:10px;">
                 <li>
+                  <strong> Feb 2024:</strong> Open souce <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">Playground V2.5</a>. A model achieves better aesthetic quality than Midjourney 5.2.
+                </li>
+                <li>
                   <strong> Dec 2023:</strong> Gave a <a href="https://www.cvg.unibe.ch/research/talks/">talk</a> at University of Bern.
                 </li>
                 <li>
@@ -74,8 +77,54 @@
           </tr>
         </tbody></table>
         
-
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="pg25_stop()" onmouseover="pg25_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pg25_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/pg2.5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/pgv2.5-from.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pg25_start() {
+                  document.getElementById('pg25_image').style.opacity = "1";
+                }
+      
+                function pg25_stop() {
+                  document.getElementById('pg25_image').style.opacity = "0";
+                }
+                pg25_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">
+                <papertitle>Playground v2.5: Three Insights towards Enhancing Aesthetic Quality in Text-to-Image Generation</papertitle>
+              </a>
+              <br>
+              <strong>Daiqing Li</strong>, 
+              <a href="">Aleks Kamko</a>,
+              <a href="">Ehsan Akhgari</a>,
+              <a href="">Ali Sabet</a>,
+              <a href="">Linmiao Xu</a>, <br>
+              <a href="">Suhail Doshi</a>,
+              <br>
+              <em>Arxiv</em>, 2024
+              <br>
+              <a href="https://playground.com/blog/playground-v2-5">blog</a>
+              /
+              <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">huggingface</a>
+              /
+              <a href="./images/pg2.5.mp4">video</a>
+              /
+              <a href="https://arxiv.org/abs/2402.17245">arXiv</a>
+              <p></p>
+              <p>
+                We share three insights to enhance aesthetic quality in text-to-image generation. Our new model achieves better aesthetic quality than Midjourney 5.2 and beats SDXL with a large margin in all multi-aspect ratios conditions.
+              </p>
+            </td>
+          </tr>
           <tr onmouseout="dreamteacher_stop()" onmouseover="dreamteacher_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
