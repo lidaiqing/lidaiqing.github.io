@@ -20,8 +20,8 @@
               <p style="text-align:center">
                 <name>Daiqing Li</name>
               </p>
-              <p>I recently join <a href="https://playgroundai.com/"> Playground</a> as a research lead. We are working on <b>pixel foundation models</b>, and we are hiring! Send me an email if you are interested. </p>
-              <p>I was a senior research scientist at <a href="https://research.nvidia.com/labs/toronto-ai/">NVIDIA Toronto AI Lab</a> in Toronto, where I work on computer vision, computer graphics, generative models and machine learning.
+              <p>I recently join <a href="https://playgroundai.com/"> Playground</a> as a Research Lead. We are working on <b>pixel foundation models</b>, and we are hiring! Send me an email if you are interested. </p>
+              <p>I was a Senior Research Scientist at <a href="https://research.nvidia.com/labs/toronto-ai/">NVIDIA Toronto AI Lab</a> in Toronto, where I work on computer vision, computer graphics, generative models and machine learning.
               </p>
               <p>
                 At NVIDIA, I work closely with <a href="https://www.cs.utoronto.ca/~fidler/">Sanja Fidler</a> and <a href="https://groups.csail.mit.edu/vision/torralbalab/">Antonio Torralba</a>. 
@@ -47,13 +47,16 @@
               <heading>News</heading>
               <p style="margin-bottom:10px;">
                 <li>
-                  <strong> Feb 2024:</strong> Open souce <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">Playground V2.5</a>. A model achieves better aesthetic quality than Midjourney 5.2.
+                  <strong> Oct 2024:</strong> Arxiv technical report <a href="https://arxiv.org/abs/2409.10695">Playground v3</a>. A model achieves SoTA text generation and text-image consistency.
+                </li>
+                <li>
+                  <strong> Feb 2024:</strong> Open souce <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">Playground v2.5</a>. A model achieves better aesthetic quality than Midjourney 5.2.
                 </li>
                 <li>
                   <strong> Dec 2023:</strong> Gave a <a href="https://www.cvg.unibe.ch/research/talks/">talk</a> at University of Bern.
                 </li>
                 <li>
-                  <strong> Dec 2023:</strong> Open souce <a href="https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic">Playground V2</a>. A <b>2.5x</b> better model over SDXL in user preference.
+                  <strong> Dec 2023:</strong> Open souce <a href="https://huggingface.co/playgroundai/playground-v2-1024px-aesthetic">Playground v2</a>. A <b>2.5x</b> better model over SDXL in user preference.
                 </li>
                 <li>
                   <strong> Aug 2023:</strong> I join <a href="https://playgroundai.com/"> Playground</a> as a research lead.
@@ -78,6 +81,57 @@
         </tbody></table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="pg3_stop()" onmouseover="pg3_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pg3_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/pgv3_from.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pg3_start() {
+                  document.getElementById('pg3_image').style.opacity = "1";
+                }
+      
+                function pg3_stop() {
+                  document.getElementById('pg3_image').style.opacity = "0";
+                }
+                pg3_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://huggingface.co/playgroundai/playground-v2.5-1024px-aesthetic">
+                <papertitle>Playground v3: Improving Text-to-Image Alignment with Deep-Fusion Large Language Models</papertitle>
+              </a>
+              <br>
+              
+              <a href="">Bingchen Liu</a>,
+              <a href="">Ehsan Akhgari</a>,
+              <a href="">Alexander Visheratin</a>,
+              <a href="">Aleks Kamko</a>, <br>
+              <a href="">Linmiao Xu</a>,
+              <a href="">Shivam Shrirao</a>,
+              <a href="">Joao Souza</a>,
+              <a href="">Suhail Doshi</a>,
+              <strong>Daiqing Li</strong>
+              <br>
+              <em>Arxiv</em>, 2024
+              <br>
+              <a href="">blog</a>
+              /
+              <a href="">huggingface</a>
+              /
+              <a href="">video</a>
+              /
+              <a href="https://arxiv.org/abs/2409.10695">arXiv</a>
+              <p></p>
+              <p>
+                We propose a new text-to-image model architecture that deep-fusion large language models(Llama3) to improve text-to-image alignment. Our model achieves state-of-the-art performance in terms of text generation and text-image consistency, better than Flux and Ideogram.
+              </p>
+            </td>
+          </tr>
           <tr onmouseout="pg25_stop()" onmouseover="pg25_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
