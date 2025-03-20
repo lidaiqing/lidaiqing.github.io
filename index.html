@@ -20,7 +20,8 @@
               <p style="text-align:center">
                 <name>Daiqing Li</name>
               </p>
-              <p>I recently join <a href="https://playgroundai.com/"> Playground</a> as a Research Lead. We are working on <b>pixel foundation models</b>, and we are hiring! Send me an email if you are interested. </p>
+              <p>I recently join Roblox as a Principle AI Scientist, and we are working on 3D foundation models. Shot me an email if you want to work with us!</p>
+              <p>I was a Research Lead at <a href="https://playgroundai.com/"> Playground</a>. We worked on pixel-foundation model and we open-source and developed the SoTA image generative models, playground-v2,v2.5 and v3. Check out the publication for more details.</p>
               <p>I was a Senior Research Scientist at <a href="https://research.nvidia.com/labs/toronto-ai/">NVIDIA Toronto AI Lab</a> in Toronto, where I work on computer vision, computer graphics, generative models and machine learning.
               </p>
               <p>
@@ -46,6 +47,9 @@
             <td style="padding:20px;width:100%;vertical-align:middle;">
               <heading>News</heading>
               <p style="margin-bottom:10px;">
+                <li>
+                  <strong> Mar 2025:</strong> Our position paper on 3D foundation models: Cube: A Roblox View of 3D Intelligence is on <a href="https://arxiv.org/abs/2503.15475">Arxiv</a> .
+                </li>
                 <li>
                   <strong> Dec 2024:</strong> Interview by Niklas Forsström to talk about <a href="https://www.youtube.com/watch?v=9-OC7IMOAUQ">DreamTeacher</a> focusing on Generative Representation Learning. 
                 </li>
@@ -84,6 +88,51 @@
         </tbody></table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="cube3d_stop()" onmouseover="cube3d_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cube3d'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/cube3d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cube3d.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function cube3d_start() {
+                  document.getElementById('cube3d').style.opacity = "1";
+                }
+      
+                function cube3d_stop() {
+                  document.getElementById('cube3d').style.opacity = "0";
+                }
+                cube3d_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/Roblox/cube">
+                <papertitle>Cube: A Roblox View of 3D Intelligence</papertitle>
+              </a>
+              <br>
+              <a href="">3D Foundation Team.</a>,
+              <br>
+              <em>Arxiv</em>, 2025
+              <br>
+              <a href="https://corp.roblox.com/newsroom/2025/03/introducing-roblox-cube">blog</a>
+              /
+              <a href="https://www.youtube.com/watch?v=85PNb99CT68">video</a>
+              /
+              <a href="https://arxiv.org/abs/2503.15475">arXiv</a>
+              /
+              <a href="https://github.com/Roblox/cube">github</a>
+              /
+              <a href="https://huggingface.co/Roblox/cube3d-v0.1">huggingface</a>
+              <p></p>
+              <p>
+                We open-source our text-to-3D foundation model - Cube3D and arxiv a position paper of our long-term vision on 3D Intelligence in Roblox.
+              </p>
+            </td>
+          </tr>
+          
           <tr onmouseout="pg3_stop()" onmouseover="pg3_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
