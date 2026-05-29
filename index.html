@@ -96,6 +96,61 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='cube3d'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/cubepart.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cubepart.webp' width="160">
+              </div>
+              <script type="text/javascript">
+                function cube3d_start() {
+                  document.getElementById('cube3d').style.opacity = "1";
+                }
+      
+                function cube3d_stop() {
+                  document.getElementById('cube3d').style.opacity = "0";
+                }
+                cube3d_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://github.com/Roblox/cube">
+                <papertitle>CubePart: An Open-Vocabulary Part-Controllable 3D Generator</papertitle>
+              </a>
+              <br>
+              <a href="">Yiheng Zhu</a>,
+              <a href="">Kangle Deng</a>,
+              <a href="">Jean-Philippe Fauconnier</a>,
+              <a href="">Inaki Navarro</a>, <br>
+              <strong>Daiqing Li</strong>,
+              <a href="">Ava Pun</a>,
+              <a href="">Yinan Zhang</a>,
+              <a href="">Peiye Zhuang</a>,
+              <a href="">Xiaoxia Sun</a>, <br>
+              <a href="">Maneesh Agrawala</a>,
+              <a href="">Kiran Bhat</a>,
+              <a href="">Tinghui Zhou</a>,
+              <br>
+              <em>Arxiv</em>, 2026
+              <br>
+              <a href="https://about.roblox.com/newsroom/2026/05/cubepart-roblox-open-vocabulary-part-controllable-3d-generator">blog</a>
+              /
+              <a href="https://cubepart.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2605.28763">arXiv</a>
+              /
+              <a href="https://cubepart.github.io/">github</a>
+              /
+              <a href="https://huggingface.co/spaces/Roblox/cubepart-demo">huggingface</a>
+              <p></p>
+              <p>
+                We open-source CubePart, a text-to-3D part-controllable model that can generate 3D objects with part-level control. We also propose a new dataset of 3D objects with part annotations, and a new evaluation metric for part controllability.
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="cube3d_stop()" onmouseover="cube3d_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cube3d'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/cube3d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
