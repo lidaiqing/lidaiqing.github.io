@@ -50,6 +50,9 @@
               <heading>News</heading>
               <p style="margin-bottom:10px;">
                 <li>
+                  <strong> Nov 2026:</strong> Our <a href="https://yuyuanspace.com/OptiWorld/">OptiWorld</a> paper will be presented at NeurIPS 2026.
+                </li>
+                <li>
                   <strong> Jun 2026:</strong> Our CubePart paper is accepted to SIGGRAPH 2026, Los Angeles. <a href="https://cubepart.github.io/">Project Page</a>, <a href="https://about.roblox.com/newsroom/2026/05/cubepart-roblox-open-vocabulary-part-controllable-3d-generator">Blog</a>.
                 </li>
                 <li>
@@ -96,6 +99,53 @@
         </tbody></table>
         
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="optiworld_stop()" onmouseover="optiworld_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <a href="https://yuyuanspace.com/OptiWorld/">
+                <div class="one">
+                  <div class="two" id="optiworld_video" style="opacity:0">
+                    <video width="160" height="160" muted autoplay loop playsinline aria-label="OptiWorld video dynamics editing result">
+                      <source src="images/optiworld.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/optiworld.png" width="160" height="160" style="object-fit:contain" alt="OptiWorld overview: optimal control for physically constrained video generation">
+                </div>
+              </a>
+              <script type="text/javascript">
+                function optiworld_start() {
+                  document.getElementById('optiworld_video').style.opacity = "1";
+                }
+
+                function optiworld_stop() {
+                  document.getElementById('optiworld_video').style.opacity = "0";
+                }
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yuyuanspace.com/OptiWorld/">
+                <papertitle>OptiWorld: Optimal Control for Video World Generation under Physical Constraints</papertitle>
+              </a>
+              <br>
+              <a href="https://yuyuan-space.github.io/">Yu Yuan</a>,
+              <a href="https://yuanjianhao508.github.io/">Jianhao Yuan</a>,
+              <a href="https://xijun-w.github.io/">Xijun Wang</a>,
+              <strong>Daiqing Li</strong>,
+              <a href="https://arking1995.github.io/">Liu He</a>,
+              <a href="https://luling06.github.io/">Lu Ling</a>,
+              <a href="https://engineering.purdue.edu/ChanGroup/stanleychan.html">Stanley H. Chan</a>
+              <br>
+              <em>NeurIPS</em>, 2026
+              <br>
+              <a href="https://yuyuanspace.com/OptiWorld/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2606.00499">arXiv</a>
+              <p></p>
+              <p>
+                OptiWorld uses optimal control to plan physically constrained trajectories before rendering videos, enabling safer, smoother, and more efficient motion for image-to-video generation, video dynamics editing, and counterfactual generation.
+              </p>
+            </td>
+          </tr>
           <tr onmouseout="cube3d_stop()" onmouseover="cube3d_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
